@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Convert Koma to Titik</title>
+</head>
+<body>
+
+<p id="number">1,234.56</p>
+
+<script>
+  const number = document.getElementById("number").innerText;
+  const formattedNumber = number.replace(/,/g, '.'); // Replace semua koma dengan titik
+  document.getElementById("number").innerText = formattedNumber; // Tampilkan hasil
+</script>
+
+</body>
+</html>
